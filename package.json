@@ -1,0 +1,27 @@
+{
+  "name": "mern-test",
+  "version": "1.0.0",
+  "description": "Boilerplate - react and express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Jonas",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongojs": "^2.5.0",
+    "mongoose": "^5.0.6",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
