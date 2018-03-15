@@ -8,7 +8,7 @@ const userSession = require('../../models/UserSession');
 
 //mongoose connection
 const db = mongoose.connection;
-mongoose.connect("mongodb://szenn:hikaru0n3@ds235328.mlab.com:35328/users");
+mongoose.connect("mongodb://username:password@ds235328.mlab.com:35328/users");
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
